@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta content="telephone=no" name="format-detection">
+  <title>FlipprCard</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/flip.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/custom.modernizr.js"></script>
+</head>
+<body>
+
+  <!-- Top Bar -->
+
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+        <h1>
+          <a href="#">
+            FlipprCard
+          </a>
+        </h1>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- End Top Bar -->
+
+  <div class="row">
+    <div class="small-12 columns">
+      <div class="card-container" id="card">
+
+        <div class="card">
+          <div class="front">
+
+
+            <!-- Personal Info -->
+            <div id="name">Tim Preston</div>
+            <div id="title">Principal</div>
+            <div id="org">Carolus Software</div>
+            <div id="email">tim@carolus.us</div>
+            <div id="cell">+1 (347) 735-8215</div>
+            <div id="web">http://carolus.us</div>
+            <!-- End Personal Info -->
+
+
+            <div class="flip-icon"></div>
+          </div>
+
+          <div class="back">
+
+
+            <!-- Send Card Form -->
+            <label>Send this card to:</label>
+            <input type="email" id="to" placeholder="email@example.com">
+            <button class="button small radius" id="send-button">Send</button>
+            <!-- End Card Form -->
+
+
+            <div id="spinner" class="hidden"></div>
+            <div id="error-notice" class="hidden notice round alert label">Something went wrong :(</div>
+            <div id="success-notice" class="hidden notice round success label">FlipprCard sent!</div>
+            <div class="flip-icon"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="small-12 columns">
+      <hr />
+
+      <div class="row">
+        <div class="small-6 columns">
+            <small><i>&copy; Your name.</i></small>
+        </div>
+
+        <div class="small-6 columns right-side">
+            <small><a href="https://generalassemb.ly/los-angeles" target="_blank">Made in Los Angeles</a></small>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- End Footer -->
+
+  <script>
+  document.write('<script src=' +
+  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+  '.js><\/script>')
+  </script>
+
+  <script src="js/foundation.min.js"></script>
+  <script src="js/flip.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

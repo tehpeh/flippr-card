@@ -1,0 +1,15 @@
+#name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#org {
+  font-style: italic;
+  font-size: small;
+  margin-bottom: 20px;
+}
+
+#cell, #email, #web {
+  font-family: monospace;
+}
+

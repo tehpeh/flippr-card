@@ -1,0 +1,97 @@
+/* borrowed from http://davidwalsh.name/css-flip */
+
+/* entire container, keeps perspective */
+.card-container {
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+/* flip the pane when hovered */
+/*.card-container:hover .card, .card-container.hover .card {*/
+.card-container.flip .card {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card-container, .front, .back {
+  width: 280px;
+  height: 310px;
+  margin: 10px auto;
+}
+
+/* flip speed goes here */
+.card {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px;
+  line-height: 1.25;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  padding-top: 30px;
+}
+
+footer {
+  padding-bottom: 15px;
+}
+
+footer .right-side {
+  text-align: right;
+}
+
+.flip-icon {
+  background-image: url('../img/redo2.png');
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+#spinner {
+  background-image: url('../img/ajax-loader.gif');
+  background-size: 16px;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.notice {
+  display: block;
+}
+
+input[type="text"], input[type="email"] {
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
