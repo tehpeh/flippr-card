@@ -21,3 +21,5 @@ On the back:
 8. Make the button small.
 
 9. Add JavaScript to send the card.
+
+10. Deploy to bitballoon.com.
