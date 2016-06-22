@@ -3,6 +3,7 @@ function sendCard() {
     to:     $('#to').val(),
     name:   $('#name').html(),
     title:  $('#title').html(),
+    org:    $('#org').html(),
     email:  $('#email').html(),
     cell:   $('#cell').html(),
     work:   $('#work').html(),
